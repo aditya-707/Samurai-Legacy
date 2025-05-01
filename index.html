@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai Legacy | Ancient Warriors of Japan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.webp">
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loading">
+    <div class="loader-logo-container">
+        <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <!-- Samurai Kanji Character (侍) -->
+            <text x="50" y="55" class="samurai-text">侍</text>
+        </svg>
+    </div>
+    <div class="loader-bar-container">
+        <div class="loader-bar"></div>
+    </div>
+</div>    
+    <header>
+        <a href="#" class="logo">SAMURAI</a>
+        <div class="menu">
+            <a href="#origins" class="menu-item">Origins</a>
+            <a href="#rise" class="menu-item">Rise</a>
+            <a href="#timeline" class="menu-item">Timeline</a>
+            <a href="#sengoku" class="menu-item">Warring States</a>
+            <a href="#legacy" class="menu-item">Legacy</a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <div class="mobile-menu">
+        <a href="#origins">Origins</a>
+        <a href="#rise">Rise</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#sengoku">Warring States</a>
+        <a href="#legacy">Legacy</a>
+    </div>
+    
+    <div class="vintage-filter"></div>
+    <div class="vignette"></div>
+        
+    <div id="canvas-container">
+        <div class="hero-content">
+            <h1 class="hero-heading">SAMURAI LEGACY</h1>
+            <p class="hero-subheading">Ancient Warriors of Japan</p>
+        </div>
+        <div class="japanese-character char-left">侍</div>
+        <div class="japanese-character char-right">武士</div>
+        
+        <div id="model-interaction-hint">
+            <div class="hint-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7,8a5,5,0,1,1,5,5A5,5,0,0,1,7,8Zm5,3a3,3,0,1,0-3-3A3,3,0,0,0,12,11Zm9,9.5a1,1,0,0,1-2,0V19a1,1,0,0,0-1-1H6a1,1,0,0,0-1,1v1.5a1,1,0,0,1-2,0V19a3,3,0,0,1,3-3H18a3,3,0,0,1,3,3Z"/>
+                </svg>
+            </div>
+            Click and drag to rotate models
+        </div>
+    </div>
+    
+    <div id="content">
+        <section id="origins" class="section">
+            <div class="section-header">
+                <div class="section-number">01</div>
+                <h2>Origins of the Samurai</h2>
+            </div>
+            <div class="section-content">
+                <div class="text-content">
+                    <p>The samurai emerged during the Heian Period (794-1185) as provincial warriors. Their name comes from the Japanese verb "saburau," meaning "to serve." Initially, they were hired militias serving wealthy landowners but gradually evolved into the warrior nobility of medieval and early-modern Japan.</p>
+                    <p>By the 12th century, samurai had become a distinct social class with unique privileges and responsibilities. Bound by the code of Bushido—the "Way of the Warrior"—they valued loyalty, honor, courage, and self-discipline above all else.</p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/samurai.webp" alt="Early samurai warrior illustration">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="quote">
+            "The way of the Samurai is found in death. When it comes to either/or, there is only the quick choice of death."<br>
+            <span style="font-size: 0.9em; opacity: 0.8; margin-top: 10px; display: block;">— From Hagakure, The Book of the Samurai</span>
+        </div>
+        
+        <section id="rise" class="section">
+            <div class="section-header">
+                <div class="section-number">02</div>
+                <h2>The Rise of Samurai Power</h2>
+            </div>
+            <div class="section-content">
+                <div class="image-content">
+                    <img src="assets/samurai on horse.webp" alt="Samurai on horseback">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="text-content">
+                    <p>The Genpei War (1180-1185) marked a turning point in Japanese history, as samurai clans fought for dominance. The Minamoto clan emerged victorious, and Minamoto no Yoritomo established the first Bakufu (shogunate) at Kamakura in 1192, creating a military government that would rule Japan for centuries.</p>
+                    <p>During the Kamakura Period (1185-1333), samurai refined their combat techniques and ethical code. They practiced various martial arts, perfected mounted archery, and developed their distinctive armor and weapons, including the katana sword that became synonymous with samurai identity.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="timeline" class="section">
+            <div class="section-header">
+                <div class="section-number">03</div>
+                <h2>The Evolution of the Samurai</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="year">794-1185</div>
+                        <p>Heian Period: Emergence of the samurai as provincial warriors serving local lords.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="year">1180-1185</div>
+                        <p>Genpei War: Conflict between the Taira and Minamoto clans establishes samurai as the ruling class.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="year">1192-1333</div>
+                        <p>Kamakura Period: First shogunate establishes samurai dominance in Japanese politics.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="year">1336-1573</div>
+                        <p>Muromachi Period: Shogunate weakens as regional lords (daimyo) gain power during the Sengoku (Warring States) period.</p>
+                    </div>
+                </div>
+            
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="year">1573-1603</div>
+                    <p>Azuchi-Momoyama Period: Japan is unified under Oda Nobunaga, Toyotomi Hideyoshi, and finally Tokugawa Ieyasu.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="year">1603-1868</div>
+                    <p>Edo Period: Peaceful era under Tokugawa shogunate. Samurai transition from battlefield warriors to bureaucrats.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="year">1868</div>
+                    <p>Meiji Restoration: End of the shogunate and samurai class as Japan modernizes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="sengoku" class="history-section">
+            <h2>Samurai in Warring States Period</h2>
+            <p>The Sengoku period (1467-1603) was an era of near-constant civil war, where samurai proved their worth on the battlefield. This turbulent time produced legendary warriors like Oda Nobunaga, Toyotomi Hideyoshi, and Tokugawa Ieyasu—who eventually unified Japan and established the Tokugawa Shogunate.</p>
+            <p>During this period, samurai armor evolved to be more practical and lightweight. The distinctive helmet (kabuto) and face mask (menpo) designs we associate with samurai today were perfected during this era of constant warfare.</p>
+        </div>
+        
+        <div id="edo" class="history-section">
+            <h2>The Peaceful Edo Period</h2>
+            <p>The Edo Period (1603-1868) brought peace to Japan, fundamentally changing the role of the samurai. With no wars to fight, many became bureaucrats, teachers, or artists. The famous Tea Ceremony, calligraphy, and other refined arts became integral to samurai culture.</p>
+            <p>Despite the peace, samurai remained the only class permitted to carry swords. The katana was more than a weapon—it was the "soul of the samurai," representing their status and spirit. While their military function diminished, their cultural importance grew.</p>
+        </div>
+        
+        <div class="quote">
+            "The sword is the soul of the samurai. If he forgets his sword, he will be barren of achievement."<br>
+            — Daidōji Yūzan
+        </div>
+        
+        <div id="end" class="history-section">
+            <h2>The End of an Era</h2>
+            <p>The Meiji Restoration in 1868 marked the end of the samurai era. Emperor Meiji abolished the samurai class privileges, including their right to wear swords and receive stipends. Many former samurai joined the new imperial army or police force, while others entered business or government service.</p>
+            <p>Though their formal status ended, the samurai legacy lives on in Japanese culture. Their ethical code, aesthetic sensibilities, and martial traditions continue to influence modern Japan and fascinate the world. The ideals of Bushido—loyalty, honor, courage, and integrity—remain central to Japanese cultural identity.</p>
+        </div>
+                
+        <footer id="legacy">
+            <p>Samurai Legacy: Ancient Warriors of Japan | Explore the history of Japan's legendary warrior class</p>
+        </footer>
+    </div>
+
+    <div class="music-icon-container" onclick="toggleAudio()">
+        <div class="music-icon">
+            <div class="music-note"></div>
+        </div>
+        <div class="three-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/bg-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js">
+    </script>
+</body>
+</html>
