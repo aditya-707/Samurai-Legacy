@@ -78,11 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 menuToggle.classList.remove("active");
                 mobileMenu.classList.remove("active");
                 document.body.classList.remove("no-scroll");
-
             });
         });
     }
-    
+
     // Setup section animations
     const sections = document.querySelectorAll(".section");
     gsap.utils.toArray(".section").forEach((section) => {
@@ -151,7 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
     timelineItems.forEach((item) => {
         appearOnScroll.observe(item);
     });
-
 
     function setActiveNav() {
         const scrollPosition = window.scrollY + window.innerHeight / 3;
@@ -537,7 +535,6 @@ function init3DScene() {
             model.position.set(0, 0, 0); // Position on the right
             model.scale.set(1, 1, 1);
 
-
             scene.add(model);
             console.log("Samurai 2 loaded successfully");
             modelLoaded();
@@ -685,17 +682,19 @@ const menuItems = document.querySelectorAll(".menu-item");
 // Update cursor position on mouse move, accounting for scroll
 document.addEventListener("mousemove", (e) => {
     // Use clientX/Y for viewport coordinates rather than pageX/Y
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
 });
 
 // Enlarge cursor when hovering over menu items
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
         cursor.style.transform = "translate(-50%, -50%) scale(4)";
     });
-    
+
     item.addEventListener("mouseleave", () => {
         cursor.style.transform = "translate(-50%, -50%) scale(1)";
     });
 });
+
+console.log("Made by aditya-707");
